@@ -3,6 +3,6 @@ class ScrabbleScoreCalulator
 {
     function calculateWordScore($word)
     {
-        return 0;
+        return strlen($word);
     }
 }

@@ -44,7 +44,7 @@ JSON
 |Behavior|Input|Output|
 |--------|-----|------|
 |It calculates the score of an empty string as 0|''|0|
-|It calculates the score of words with only (A, E, I, O, U, L, N, R, S, T) by counting the number of letters.|'letter'|6|
+|It calculates the score of words with only (A, E, I, O, U, L, N, R, S, T) by counting the number of letters.|'letters'|7|
 |It calculates the score of of any word.|'quickly'|24|
 
 

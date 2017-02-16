@@ -5,15 +5,28 @@ class ScrabbleScoreCalulatorTest extends PHPUnit_Framework_TestCase
 {
     function test_calculateWordScore_emptyWord()
     {
-      //Arrange
-      $test_ScrabbleScoreCalulator = new ScrabbleScoreCalulator;
-      $word = '';
+        //Arrange
+        $test_ScrabbleScoreCalulator = new ScrabbleScoreCalulator;
+        $word = '';
 
-      //Act
-      $result = $test_ScrabbleScoreCalulator->calculateWordScore($word);
+        //Act
+        $result = $test_ScrabbleScoreCalulator->calculateWordScore($word);
 
-      //Assert
-      $this->assertSame(0, $result);
+        //Assert
+        $this->assertSame(0, $result);
+    }
+
+    function test_calculateWordScore_commonLetters()
+    {
+        //Arrange
+        $test_ScrabbleScoreCalulator = new ScrabbleScoreCalulator;
+        $word = 'letters';
+
+        //Act
+        $result = $test_ScrabbleScoreCalulator->calculateWordScore($word);
+
+        //Assert
+        $this->assertSame(7, $result);
     }
 }
 ?>
