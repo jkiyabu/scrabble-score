@@ -6,3 +6,4 @@ class ScrabbleScoreCalulator
         return strlen($word);
     }
 }
+?>
