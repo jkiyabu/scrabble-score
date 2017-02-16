@@ -14,7 +14,7 @@ class ScrabbleScoreCalulator
     function calculateWordScore($word)
     {
         $score = 0;
-        $letters = str_split($word);
+        $letters = str_split(strtolower($word));
         foreach ($letters as $letter) {
             foreach (self::LETTER_SCORES as $points => $char_list) {
               if (in_array($letter, $char_list)) {

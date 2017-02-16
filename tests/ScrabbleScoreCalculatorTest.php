@@ -41,5 +41,18 @@ class ScrabbleScoreCalulatorTest extends PHPUnit_Framework_TestCase
         //Assert
         $this->assertSame(25, $result);
     }
+
+    function test_calculateWordScore_caseInsensitive()
+    {
+        //Arrange
+        $test_ScrabbleScoreCalulator = new ScrabbleScoreCalulator;
+        $word = 'Quickly';
+
+        //Act
+        $result = $test_ScrabbleScoreCalulator->calculateWordScore($word);
+
+        //Assert
+        $this->assertSame(25, $result);
+    }
 }
 ?>
